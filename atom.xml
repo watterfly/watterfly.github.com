@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Doctor Insane]]></title>
+  <link href="http://fengsanity.com/atom.xml" rel="self"/>
+  <link href="http://fengsanity.com/"/>
+  <updated>2013-08-31T07:29:04+08:00</updated>
+  <id>http://fengsanity.com/</id>
+  <author>
+    <name><![CDATA[Feng Sanity]]></name>
+    <email><![CDATA[mrfenglingyu@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
