@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jailbreak | Doctor Insane]]></title>
   <link href="http://fengsanity.com/blog/categories/jailbreak/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-08-31T23:37:17+08:00</updated>
+  <updated>2013-08-31T23:56:57+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -20,11 +20,11 @@
     <id>http://fengsanity.com/blog/2013/02/02/fabulous-moment</id>
     <content type="html"><![CDATA[<h2>越狱是什么？</h2>
 
-<p>iOS越狱(iOS Jailbreaking)是用于获取苹果公司移动设备操作系统iOS最高权限(ROOT)的一种技术手段。越狱完成后设备依然运行iOS操作系统，一款名为Cydia的软件将会被安装在设备中，通过此软件可以完成越狱前不可能进行的动作，例如安装App Store以外的软件、更换外观主题、运行Shell程序、甚至解开营运商对手机网络的限制（俗称“解锁”）。</p>
+<p>iOS越狱(iOS Jailbreaking)是用于获取苹果公司移动设备操作系统iOS最高权限(ROOT)的一种技术手段。越狱完成后设备依然运行iOS操作系统，一款名为Cydia的软件将会被安装在设备中，通过此软件可以完成越狱前不可能进行的动作，例如安装App Store以外<!--more-->的软件、换外观主题、运行Shell程序、甚至解开营运商对手机网络的限制（俗称“解锁”）。</p>
 
 <h2>原理呢？</h2>
 
-<p>利用UNIX系统漏洞，获取ROOT权<!--more-->限，在安装顶级权限程序后，实现越狱</p>
+<p>利用UNIX系统漏洞，获取ROOT权限，在安装顶级权限程序后，实现越狱</p>
 
 <h2>谁在从事这项工作？</h2>
 
