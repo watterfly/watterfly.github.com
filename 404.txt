@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>±§Ç¸£¬ÄãÒª·ÃÎÊµÄÍøÒ³²»´æÔÚ - Ë¼¿¼µÄ¹ì¼£</title>
+  <title>æŠ±æ­‰ï¼Œä½ è¦è®¿é—®çš„ç½‘é¡µä¸å­˜åœ¨ - æ€è€ƒçš„è½¨è¿¹</title>
   <meta name="author" content="Shane">
 
   
-  <meta name="description" content="±§Ç¸£¬ÄãÒª·ÃÎÊµÄÍøÒ³²»´æÔÚ ¿´¿´ÏÂÃæÓĞÄ¾ÓĞÄãÒªÕÒµÄ¶«¶«£¿ WindowsÉÏµÄÒôÆµ²É¼¯¼¼Êõ
-Aug 14 2013 posted in CaptureAudio ³ÌĞòÔ±µÄ´úÂë±à¼­Æ÷&#8211;Sublime Text 2
+  <meta name="description" content="æŠ±æ­‰ï¼Œä½ è¦è®¿é—®çš„ç½‘é¡µä¸å­˜åœ¨ çœ‹çœ‹ä¸‹é¢æœ‰æœ¨æœ‰ä½ è¦æ‰¾çš„ä¸œä¸œï¼Ÿ Windowsä¸Šçš„éŸ³é¢‘é‡‡é›†æŠ€æœ¯
+Aug 14 2013 posted in CaptureAudio ç¨‹åºå‘˜çš„ä»£ç ç¼–è¾‘å™¨&#8211;Sublime Text 2
 Jan 06 2013 posted in FreeSoftware, &hellip;">
   
 
@@ -25,7 +25,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Ë¼¿¼µÄ¹ì¼£" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="æ€è€ƒçš„è½¨è¿¹" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -49,9 +49,9 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Ë¼¿¼µÄ¹ì¼£</a></h1>
+  <h1><a href="/">æ€è€ƒçš„è½¨è¿¹</a></h1>
   
-    <h2>ÈËÈôÎŞÃû ×¨ĞÄÁ·½£</h2>
+    <h2>äººè‹¥æ— å ä¸“å¿ƒç»ƒå‰‘</h2>
   
 </hgroup>
 
@@ -69,9 +69,9 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">²©¿Í</a></li>
-  <li><a href="/blog/archives">ÎÄÕÂÁĞ±í</a></li>
-  <li><a href="/about">¹ØÓÚÎÒ</a></li>
+  <li><a href="/">åšå®¢</a></li>
+  <li><a href="/blog/archives">æ–‡ç« åˆ—è¡¨</a></li>
+  <li><a href="/about">å…³äºæˆ‘</a></li>
 </ul>
 
 </nav>
@@ -81,16 +81,16 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 <article role="article">
   
   <header>
-    <h1 class="entry-title">±§Ç¸£¬ÄãÒª·ÃÎÊµÄÍøÒ³²»´æÔÚ</h1>
+    <h1 class="entry-title">æŠ±æ­‰ï¼Œä½ è¦è®¿é—®çš„ç½‘é¡µä¸å­˜åœ¨</h1>
     
   </header>
   
-  <h3> ¿´¿´ÏÂÃæÓĞÄ¾ÓĞÄãÒªÕÒµÄ¶«¶«£¿</h3>
+  <h3> çœ‹çœ‹ä¸‹é¢æœ‰æœ¨æœ‰ä½ è¦æ‰¾çš„ä¸œä¸œï¼Ÿ</h3>
 <div id="blog-archives">
 
 <article>
   
-<h1><a href="/blog/2013/08/14/caprure-audio-on-windows/">WindowsÉÏµÄÒôÆµ²É¼¯¼¼Êõ</a></h1>
+<h1><a href="/blog/2013/08/14/caprure-audio-on-windows/">Windowsä¸Šçš„éŸ³é¢‘é‡‡é›†æŠ€æœ¯</a></h1>
 <time datetime="2013-08-14T13:56:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>14</span> <span class='year'>2013</span></time>
 
 <footer>
@@ -102,7 +102,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2013/01/06/sublime-text2-for-programmer/">³ÌĞòÔ±µÄ´úÂë±à¼­Æ÷&#8211;Sublime Text 2</a></h1>
+<h1><a href="/blog/2013/01/06/sublime-text2-for-programmer/">ç¨‹åºå‘˜çš„ä»£ç ç¼–è¾‘å™¨&#8211;Sublime Text 2</a></h1>
 <time datetime="2013-01-06T15:43:00+08:00" pubdate><span class='month'>Jan</span> <span class='day'>06</span> <span class='year'>2013</span></time>
 
 <footer>
@@ -114,7 +114,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/11/23/mfc-custom-control/">Ê¹ÓÃMFC Custom ControlÊµÏÖ½çÃæµÄ×Ô»æ</a></h1>
+<h1><a href="/blog/2012/11/23/mfc-custom-control/">ä½¿ç”¨MFC Custom Controlå®ç°ç•Œé¢çš„è‡ªç»˜</a></h1>
 <time datetime="2012-11-23T11:45:00+08:00" pubdate><span class='month'>Nov</span> <span class='day'>23</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -126,7 +126,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/10/12/software-design-principle/">Èí¼şÉè¼ÆµÄ¼¸µãË¼¿¼ºÍ×Ü½á</a></h1>
+<h1><a href="/blog/2012/10/12/software-design-principle/">è½¯ä»¶è®¾è®¡çš„å‡ ç‚¹æ€è€ƒå’Œæ€»ç»“</a></h1>
 <time datetime="2012-10-12T19:48:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>12</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -138,11 +138,11 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/10/09/my-technology-roadmap/">¸öÈË¼¼ÊõÌáÉıRoadmap</a></h1>
+<h1><a href="/blog/2012/10/09/my-technology-roadmap/">ä¸ªäººæŠ€æœ¯æå‡Roadmap</a></h1>
 <time datetime="2012-10-09T16:37:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>09</span> <span class='year'>2012</span></time>
 
 <footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/¸öÈË¹æ»®/'>¸öÈË¹æ»®</a>, <a class='category' href='/blog/categories/Ñ§Ï°roadmap/'>Ñ§Ï°Roadmap</a></span>
+  <span class="categories">posted in <a class='category' href='/blog/categories/ä¸ªäººè§„åˆ’/'>ä¸ªäººè§„åˆ’</a>, <a class='category' href='/blog/categories/å­¦ä¹ roadmap/'>å­¦ä¹ Roadmap</a></span>
 </footer>
 
 
@@ -150,7 +150,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/09/24/compile-ffmpeg-on-ubuntu/">ÔÚUbuntuÖĞÏÂÔØ±àÒëffmpegµÄ¹ı³Ì</a></h1>
+<h1><a href="/blog/2012/09/24/compile-ffmpeg-on-ubuntu/">åœ¨Ubuntuä¸­ä¸‹è½½ç¼–è¯‘ffmpegçš„è¿‡ç¨‹</a></h1>
 <time datetime="2012-09-24T14:06:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>24</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -162,7 +162,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/09/22/study-ubuntu-on-virtualbox/">ÔÚVirtualBoxÉÏĞ¡ÍæUbuntu</a></h1>
+<h1><a href="/blog/2012/09/22/study-ubuntu-on-virtualbox/">åœ¨VirtualBoxä¸Šå°ç©Ubuntu</a></h1>
 <time datetime="2012-09-22T18:08:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>22</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -174,7 +174,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/09/06/my-favorite-software/">Ë¼Î¬µ¼Í¼: ÎÒµÄ³£ÓÃÈí¼ş</a></h1>
+<h1><a href="/blog/2012/09/06/my-favorite-software/">æ€ç»´å¯¼å›¾: æˆ‘çš„å¸¸ç”¨è½¯ä»¶</a></h1>
 <time datetime="2012-09-06T20:20:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>06</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -186,7 +186,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/09/03/analyze-log-file-based-on-python/">Ê¹ÓÃPythonÍ¼ĞÎ»¯·ÖÎö´óLogÎÄ¼ş</a></h1>
+<h1><a href="/blog/2012/09/03/analyze-log-file-based-on-python/">ä½¿ç”¨Pythonå›¾å½¢åŒ–åˆ†æå¤§Logæ–‡ä»¶</a></h1>
 <time datetime="2012-09-03T14:14:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>03</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -198,7 +198,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
 
 <article>
   
-<h1><a href="/blog/2012/09/01/learning-regex/">ÕıÔò±í´ïÊ½³õÑ§±Ê¼Ç</a></h1>
+<h1><a href="/blog/2012/09/01/learning-regex/">æ­£åˆ™è¡¨è¾¾å¼åˆå­¦ç¬”è®°</a></h1>
 <time datetime="2012-09-01T13:43:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>01</span> <span class='year'>2012</span></time>
 
 <footer>
@@ -220,64 +220,64 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
     <section>
   <h1>About Me</h1>
   <p><img src="/images/blogImgs/about.jpg"></p>
-  <p>C++³ÌĞòÔ±£¬ÔÚWindowsÉÏ¸ãÒôÊÓÆµ¿ª·¢5ÄêÓĞÓà</p>
-  <p>°®µç×Ó²úÆ·£¬°®Google, °®ÕÛÌÚ</p> 
-  <p>Ï²»¶¿ªÔ´µÄ¶«Î÷, Ï²»¶¶ÁÊéºÍË¼¿¼, Ï²»¶×öÒ»Ğ©geekµÄÊÂÇé/¶«Î÷</p>
+  <p>C++ç¨‹åºå‘˜ï¼Œåœ¨Windowsä¸ŠæéŸ³è§†é¢‘å¼€å‘5å¹´æœ‰ä½™</p>
+  <p>çˆ±ç”µå­äº§å“ï¼Œçˆ±Google, çˆ±æŠ˜è…¾</p> 
+  <p>å–œæ¬¢å¼€æºçš„ä¸œè¥¿, å–œæ¬¢è¯»ä¹¦å’Œæ€è€ƒ, å–œæ¬¢åšä¸€äº›geekçš„äº‹æƒ…/ä¸œè¥¿</p>
   <p><img src="/images/myemail.png"  alt="shanewfx@gmail.com" /></p>
 </section>
 <section>
-  <h1>SinaÎ§²±</h1>
+  <h1>Sinaå›´è„–</h1>
   <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=300&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=1684299551&verifier=e30813de&dpc=1"></iframe>
 </section>
 
 <section>
-  <h1>×îĞÂÎÄÕÂ</h1>
+  <h1>æœ€æ–°æ–‡ç« </h1>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/08/14/caprure-audio-on-windows/">WindowsÉÏµÄÒôÆµ²É¼¯¼¼Êõ</a>
+        <a href="/blog/2013/08/14/caprure-audio-on-windows/">Windowsä¸Šçš„éŸ³é¢‘é‡‡é›†æŠ€æœ¯</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/01/06/sublime-text2-for-programmer/">³ÌĞòÔ±µÄ´úÂë±à¼­Æ÷--Sublime Text 2</a>
+        <a href="/blog/2013/01/06/sublime-text2-for-programmer/">ç¨‹åºå‘˜çš„ä»£ç ç¼–è¾‘å™¨--Sublime Text 2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/11/23/mfc-custom-control/">Ê¹ÓÃMFC Custom ControlÊµÏÖ½çÃæµÄ×Ô»æ</a>
+        <a href="/blog/2012/11/23/mfc-custom-control/">ä½¿ç”¨MFC Custom Controlå®ç°ç•Œé¢çš„è‡ªç»˜</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/10/12/software-design-principle/">Èí¼şÉè¼ÆµÄ¼¸µãË¼¿¼ºÍ×Ü½á</a>
+        <a href="/blog/2012/10/12/software-design-principle/">è½¯ä»¶è®¾è®¡çš„å‡ ç‚¹æ€è€ƒå’Œæ€»ç»“</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/10/09/my-technology-roadmap/">¸öÈË¼¼ÊõÌáÉıRoadmap</a>
+        <a href="/blog/2012/10/09/my-technology-roadmap/">ä¸ªäººæŠ€æœ¯æå‡Roadmap</a>
       </li>
     
   </ul>
 </section>
 <section>
   <h1>Tag Cloud</h1>
-    <span id="tag-cloud"><a href='/blog/categories/boost' style='font-size: 110.0%'>Boost(1)</a> <a href='/blog/categories/c-' style='font-size: 160.0%'>C++(6)</a> <a href='/blog/categories/captureaudio' style='font-size: 110.0%'>Captureaudio(1)</a> <a href='/blog/categories/closed-caption' style='font-size: 110.0%'>Closed caption(1)</a> <a href='/blog/categories/design' style='font-size: 110.0%'>Design(1)</a> <a href='/blog/categories/design-principle' style='font-size: 110.0%'>Design-principle(1)</a> <a href='/blog/categories/dtvcc' style='font-size: 110.0%'>Dtvcc(1)</a> <a href='/blog/categories/ffmpeg' style='font-size: 110.0%'>Ffmpeg(1)</a> <a href='/blog/categories/freesoftware' style='font-size: 120.0%'>Freesoftware(2)</a> <a href='/blog/categories/git' style='font-size: 150.0%'>Git(5)</a> <a href='/blog/categories/gitstack' style='font-size: 110.0%'>Gitstack(1)</a> <a href='/blog/categories/linux' style='font-size: 110.0%'>Linux(1)</a> <a href='/blog/categories/log' style='font-size: 110.0%'>Log(1)</a> <a href='/blog/categories/markdown' style='font-size: 110.0%'>Markdown(1)</a> <a href='/blog/categories/matplotlib' style='font-size: 110.0%'>Matplotlib(1)</a> <a href='/blog/categories/mfc' style='font-size: 110.0%'>Mfc(1)</a> <a href='/blog/categories/notepad-' style='font-size: 110.0%'>Notepad++(1)</a> <a href='/blog/categories/octopress' style='font-size: 110.0%'>Octopress(1)</a> <a href='/blog/categories/octopress' style='font-size: 120.0%'>Octopress(2)</a> <a href='/blog/categories/python' style='font-size: 120.0%'>Python(2)</a> <a href='/blog/categories/regex' style='font-size: 110.0%'>Regex(1)</a> <a href='/blog/categories/sed' style='font-size: 120.0%'>Sed(2)</a> <a href='/blog/categories/software' style='font-size: 110.0%'>Software(1)</a> <a href='/blog/categories/sublime-text2' style='font-size: 110.0%'>Sublime-text2(1)</a> <a href='/blog/categories/thinking' style='font-size: 110.0%'>Thinking(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 120.0%'>Ubuntu(2)</a> <a href='/blog/categories/ui' style='font-size: 110.0%'>Ui(1)</a> <a href='/blog/categories/virtualbox' style='font-size: 110.0%'>Virtualbox(1)</a> <a href='/blog/categories/vs2005' style='font-size: 120.0%'>Vs2005(2)</a> <a href='/blog/categories/vss' style='font-size: 110.0%'>Vss(1)</a> <a href='/blog/categories/vss2git' style='font-size: 110.0%'>Vss2git(1)</a> <a href='/blog/categories/x64' style='font-size: 130.0%'>X64(3)</a> <a href='/blog/categories/¸öÈË¹æ»®' style='font-size: 110.0%'>¸öÈË¹æ»®(1)</a> <a href='/blog/categories/Ñ§Ï°roadmap' style='font-size: 110.0%'>Ñ§Ï°roadmap(1)</a> <a href='/blog/categories/¿ªÔ´Èí¼ş' style='font-size: 110.0%'>¿ªÔ´Èí¼ş(1)</a> </span>
+    <span id="tag-cloud"><a href='/blog/categories/boost' style='font-size: 110.0%'>Boost(1)</a> <a href='/blog/categories/c-' style='font-size: 160.0%'>C++(6)</a> <a href='/blog/categories/captureaudio' style='font-size: 110.0%'>Captureaudio(1)</a> <a href='/blog/categories/closed-caption' style='font-size: 110.0%'>Closed caption(1)</a> <a href='/blog/categories/design' style='font-size: 110.0%'>Design(1)</a> <a href='/blog/categories/design-principle' style='font-size: 110.0%'>Design-principle(1)</a> <a href='/blog/categories/dtvcc' style='font-size: 110.0%'>Dtvcc(1)</a> <a href='/blog/categories/ffmpeg' style='font-size: 110.0%'>Ffmpeg(1)</a> <a href='/blog/categories/freesoftware' style='font-size: 120.0%'>Freesoftware(2)</a> <a href='/blog/categories/git' style='font-size: 150.0%'>Git(5)</a> <a href='/blog/categories/gitstack' style='font-size: 110.0%'>Gitstack(1)</a> <a href='/blog/categories/linux' style='font-size: 110.0%'>Linux(1)</a> <a href='/blog/categories/log' style='font-size: 110.0%'>Log(1)</a> <a href='/blog/categories/markdown' style='font-size: 110.0%'>Markdown(1)</a> <a href='/blog/categories/matplotlib' style='font-size: 110.0%'>Matplotlib(1)</a> <a href='/blog/categories/mfc' style='font-size: 110.0%'>Mfc(1)</a> <a href='/blog/categories/notepad-' style='font-size: 110.0%'>Notepad++(1)</a> <a href='/blog/categories/octopress' style='font-size: 110.0%'>Octopress(1)</a> <a href='/blog/categories/octopress' style='font-size: 120.0%'>Octopress(2)</a> <a href='/blog/categories/python' style='font-size: 120.0%'>Python(2)</a> <a href='/blog/categories/regex' style='font-size: 110.0%'>Regex(1)</a> <a href='/blog/categories/sed' style='font-size: 120.0%'>Sed(2)</a> <a href='/blog/categories/software' style='font-size: 110.0%'>Software(1)</a> <a href='/blog/categories/sublime-text2' style='font-size: 110.0%'>Sublime-text2(1)</a> <a href='/blog/categories/thinking' style='font-size: 110.0%'>Thinking(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 120.0%'>Ubuntu(2)</a> <a href='/blog/categories/ui' style='font-size: 110.0%'>Ui(1)</a> <a href='/blog/categories/virtualbox' style='font-size: 110.0%'>Virtualbox(1)</a> <a href='/blog/categories/vs2005' style='font-size: 120.0%'>Vs2005(2)</a> <a href='/blog/categories/vss' style='font-size: 110.0%'>Vss(1)</a> <a href='/blog/categories/vss2git' style='font-size: 110.0%'>Vss2git(1)</a> <a href='/blog/categories/x64' style='font-size: 130.0%'>X64(3)</a> <a href='/blog/categories/ä¸ªäººè§„åˆ’' style='font-size: 110.0%'>ä¸ªäººè§„åˆ’(1)</a> <a href='/blog/categories/å­¦ä¹ roadmap' style='font-size: 110.0%'>å­¦ä¹ roadmap(1)</a> <a href='/blog/categories/å¼€æºè½¯ä»¶' style='font-size: 110.0%'>å¼€æºè½¯ä»¶(1)</a> </span>
 </section>
 <section>
-  <h1>×îĞÂÆÀÂÛ</h1>
+  <h1>æœ€æ–°è¯„è®º</h1>
   <script type="text/javascript" src="http://shanewfx.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
 </section>
 <section>
-  <h1>´óÅ£²©¿Í</h1>
+  <h1>å¤§ç‰›åšå®¢</h1>
   <ul>
     <li>
-      <a href="http://coolshell.cn/">¿á¿ÇCoolShell</a>
+      <a href="http://coolshell.cn/">é…·å£³CoolShell</a>
     </li>
     <li>
-      <a href="http://mindhacks.cn/">ÁõÎ´ÅôMIND HACKS</a>
+      <a href="http://mindhacks.cn/">åˆ˜æœªé¹MIND HACKS</a>
     </li>
     <li>
-      <a href="http://blog.codingnow.com/">ÔÆ·ç</a>
+      <a href="http://blog.codingnow.com/">äº‘é£</a>
     </li>
     <li>
-      <a href="http://www.cnblogs.com/Solstice/">³ÂË¶</a>
+      <a href="http://www.cnblogs.com/Solstice/">é™ˆç¡•</a>
     </li>
   </ul>
 </section>
@@ -294,7 +294,7 @@ Jan 06 2013 posted in FreeSoftware, &hellip;">
   <h1>License</h1>
   <p>
    <img class="center" alt="License" src="/images/CC.png" />
-  ±¾Õ¾ËùÓĞ×÷Æ·²ÉÓÃ<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">ÖªÊ¶¹²ÏíÊğÃû-·ÇÉÌÒµĞÔÊ¹ÓÃ-ÏàÍ¬·½Ê½¹²Ïí 2.5 ÖĞ¹ú´óÂ½Ğí¿ÉĞ­Òé</a>½øĞĞĞí¿É¡£
+  æœ¬ç«™æ‰€æœ‰ä½œå“é‡‡ç”¨<a href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">çŸ¥è¯†å…±äº«ç½²å-éå•†ä¸šæ€§ä½¿ç”¨-ç›¸åŒæ–¹å¼å…±äº« 2.5 ä¸­å›½å¤§é™†è®¸å¯åè®®</a>è¿›è¡Œè®¸å¯ã€‚
   </p>
 </section>
 
