@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Doctor Insane</title>
+  <title>小雨伞 - Doctor Insane</title>
   <meta name="author" content="Feng Sanity">
 
   
-  <meta name="description" content="Blog Archive 2013 Faublous Moment
-Feb 02 2013 posted in jailbreak 2012 小雨伞
-Feb 03 2012 posted in jailbreak Recent Posts Faublous Moment 小雨伞 About Me &hellip;">
-  
+  <meta name="description" content="About tinyumbrella">
+  <meta name="keywords" content="jailbreak tinyumbrella 越狱 小雨伞">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -20,7 +18,7 @@ Feb 03 2012 posted in jailbreak Recent Posts Faublous Moment 小雨伞 About Me 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://fengsanity.com/blog/archives/">
+  <link rel="canonical" href="http://fengsanity.com/blog/2012/02/03/tinyumbrella/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -76,53 +74,126 @@ Feb 03 2012 posted in jailbreak Recent Posts Faublous Moment 小雨伞 About Me 
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">小雨伞</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-03T09:46:00+08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>evad3rs的大神们已将越狱进度条推进至80%，看来明早完成全部工作已是不太可能。暴风雨前的平静，让我们有机会关注下其它神作。</p>
 
-  
-  <h2>2013</h2>
+<p><img src="/images/article/tinyumbrella.jpg" alt="tinyumbrella" /></p>
 
-<article>
-  
-<h1><a href="/blog/2013/02/02/fabulous-moment/">Faublous Moment</a></h1>
-<time datetime="2013-02-02T21:10:00+08:00" pubdate><span class='month'>Feb</span> <span class='day'>02</span> <span class='year'>2013</span></time>
+<h2>小雨伞是嘛玩意儿？</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/jailbreak/'>jailbreak</a></span>
-</footer>
+<p>全名叫小雨伞SHSH备份工具。苹果在一般在发布新固件后，就会停止对旧版本固件的验证。因此，如果用户事先备份iOS shsh，即使苹果推出新固件并停止旧固件的恢复验证，也可以通过自己搭建的验证服务器来恢复旧固件。原来是一款证书备份工具，不过，我们还是<!--more-->来看看它的详细介绍吧。</p>
 
+<h2>简介</h2>
 
-</article>
+<p>TinyUmbrella是一款方便的备份shsh的软件，由java程序编写，支持windows /Mac/ Linux等主流系统。TinyUmbrella（小雨伞固件备份） 即原来的Firmware Umbrella，是一款用来申请ECID配对的SHSH文件的软件，支持未越狱的设备。</p>
 
+<h2>SHSH</h2>
 
+<p>SHSH的全称是Signature Hash Blobs。shsh就是验证iTunes恢复固件操作合法性的一个证书。当我们用iTunes进行恢复固件操作时，iTunes会向苹果验证服务器提交待恢复固件设备的ECID，并申请获取恢复该版固件的shsh验证证书，苹果会通过验证服务器发送一个和ECID对应的shsh证书给iTunes，这样iTunes就可以继续进行和这个shsh相对应版本的固件恢复。打个比方shsh就好比一个钥匙,你有了4.3.3编号的钥匙才让你打开4.3.3编号的锁，你才能进4.3.3编号的家门。</p>
 
-  
-  <h2>2012</h2>
+<h2>备份SHSH的意义</h2>
 
-<article>
-  
-<h1><a href="/blog/2012/02/03/tinyumbrella/">小雨伞</a></h1>
-<time datetime="2012-02-03T09:46:00+08:00" pubdate><span class='month'>Feb</span> <span class='day'>03</span> <span class='year'>2012</span></time>
+<p>shsh文件被放在苹果服务器上，而且每当新固件发布时，苹果就会关闭前一版本shsh文件的提供，那我们在恢复固件尤其在为了完美越狱需要降级时又必须有相应版本所对应的shsh文件，这时就显得备份shsh的重要性了。同样打个比方，苹果提供4.3.5编号的钥匙了，就收起4.3.3编号的钥匙不给你了，所以你应该在苹果还给你4.3.3编号钥匙的时候就去备份一下钥匙。</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/jailbreak/'>jailbreak</a></span>
-</footer>
+<h2>使用小雨伞工具备份SHSH</h2>
 
+<p>小雨伞是在Java环境下奔跑的程序，我只能在台式机上安个Java虚拟机，这引起了家人的反感。备份shsh与越狱无关，只要苹果未关闭验证，小雨伞就能够帮助我们备份“钥匙”。小雨伞工具下载解压安装完毕后，通过傻瓜式操作就可以取出任意苹果设备的shsh，再也不用担心狡猾的苹果大大收回不给了。趁现在6.1系统验证未关闭，我也偷偷备份了一把。不过感觉目前并不重要，关键看大神们的操作：被完美越狱之后shsh才能够体现它应有的价值！</p>
 
-</article>
+<h2>有问题反馈</h2>
+
+<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+
+<ul>
+<li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Feng Sanity</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-03T09:46:00+08:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/jailbreak/'>jailbreak</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fengsanity.com/blog/2012/02/03/tinyumbrella/" data-via="" data-counturl="http://fengsanity.com/blog/2012/02/03/tinyumbrella/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/02/02/fabulous-moment/" title="Next Post: Faublous Moment">Faublous Moment &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -180,7 +251,10 @@ Feb 03 2012 posted in jailbreak Recent Posts Faublous Moment 小雨伞 About Me 
       var disqus_shortname = 'xiaozuanfeng';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://fengsanity.com/blog/2012/02/03/tinyumbrella/';
+        var disqus_url = 'http://fengsanity.com/blog/2012/02/03/tinyumbrella/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
