@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jailbreak | Doctor Insane]]></title>
   <link href="http://fengsanity.com/blog/categories/jailbreak/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-09-02T22:45:56+08:00</updated>
+  <updated>2013-09-03T11:50:48+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[evasi0n]]></title>
+    <link href="http://fengsanity.com/blog/2013/02/04/evad3rs/"/>
+    <updated>2013-02-04T10:50:00+08:00</updated>
+    <id>http://fengsanity.com/blog/2013/02/04/evad3rs</id>
+    <content type="html"><![CDATA[<p>早上八点多，evad3rs的大神们已将越狱进度条从85%推进至92%，完全式指日可待。
+<img src="/images/article/evad3rs.jpg" alt="evad3rs" /></p>
+
+<h3>越来与卡的evasi0n主页</h3>
+
+<p>越狱官网<a href="http://http://evasi0n.com/">evasi0n</a>的访问速度越来越慢，可见用户的刷新操作有多频繁。大神们也不容易，又要能破解系统，又得出越狱工具，还得做网站。我们就来看看这个越狱主页是啥样子吧！<!--more--></p>
+
+<h2>简洁的evasi0n页面</h2>
+
+<p><img src="/images/article/family%20photo.jpg" alt="evasi0n" /></p>
+
+<p>我们发现所谓的越狱官网就只有一个页面，无法跳转。背景主色调为灰白色，配以少许清淡黑客帝国般的点缀，总体虽然偏冷，但看上去非常柔和舒服。页面十分简洁明了，高度固定，打开后所有内容便一览无余。黑客们称此次越狱是“evasi0n-iOS 6.x Jailbreak”，作为主标题印在中央上方。正中央则是本次越狱支持的苹果设备全家福照，一眼便知晓大神能否拯救你的设备。下方则是进度条以及本次进度的说明，目前指向92%的位置，描述为“Final testing and preparation. Coming back soon!”，说明大神正在进行最后阶段的测试。底部则是Linux、Mac OS X、Windows三大操作系统越狱工具的相爱在按钮，可惜现在均为灰色不可选。</p>
+
+<h2>页面分析</h2>
+
+<p>没有采用HTML5技术。使用传统的div进行嵌套，并未出现table标签。简洁的我实在无话可说，说明大神花在越狱工作的精力非常多，其他杂活便无暇顾及。</p>
+
+<h2>总结</h2>
+
+<p>很简明的页面，基本目的已经达到，小白容易上手，大神也乐意。我只想说我现在的心情是这样的</p>
+
+<p><img src="/images/article/free.jpg" alt="I wanna be free" /></p>
+
+<h2>有问题反馈</h2>
+
+<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+
+<ul>
+<li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[小雨伞]]></title>
