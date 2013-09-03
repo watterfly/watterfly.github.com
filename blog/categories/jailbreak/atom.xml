@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jailbreak | Doctor Insane]]></title>
   <link href="http://fengsanity.com/blog/categories/jailbreak/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-09-03T11:56:41+08:00</updated>
+  <updated>2013-09-04T01:56:25+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -14,16 +14,49 @@
 
   
   <entry>
+    <title type="html"><![CDATA[100%]]></title>
+    <link href="http://fengsanity.com/blog/2013/02/05/100-percent/"/>
+    <updated>2013-02-05T01:34:00+08:00</updated>
+    <id>http://fengsanity.com/blog/2013/02/05/100-percent</id>
+    <content type="html"><![CDATA[<p>迷迷糊糊中，突然醒了，看看时间是凌晨一点零五，想起来大神们该手工了，于是赶紧爬起来刷新<a href="http://evasi0n.com/">evasi0n</a>。好慢呀，刷了好几遍终于开了，看见了这些日子日思夜想，却不知究竟为何物的画面：
+<img src="/images/article/100percents.jpg" alt="100 percents" /></p>
+
+<p>三个按钮终于由不可点击灰色变成了蓝色，试着点了点，显然全球蜂拥而至的自由爱好者不会让你顺利地下载到越狱工具，只能再狠心等到白天了。<!--more--></p>
+
+<h2>端倪</h2>
+
+<p>早就发现，<a href="http://http://evasi0n.com/">evasi0n</a>页面的进度条有古怪。从昨天白天90%进度开始，大神们估计都回家休息了，只定好了越狱工具发布的准确的时间，同时留下了一个定时线程在坚守岗位。这也难怪，大神们都连续通宵达旦多日，即使是铁打的也扛不住啊。这个定时器负责刷新越狱工作的进度，在大神开始休息到预定发布的时间，大约每个时辰将进度条推升1%,直到刚的100%。证据如下组图片：</p>
+
+<p><img src="/images/article/progress%20bar.png" alt="progress bar" /></p>
+
+<p>好吧我承认是看到这组图片新闻才激发的灵感。</p>
+
+<h2>明日再战</h2>
+
+<p>面对气势汹汹的果粉大军，同时遭遇周公的阻挠，我选择回到我温暖的大床，希望美美地睡上一觉。悬着的石头终于落下，心理那份莫名的空荡也逐渐消失，只知道我的思想即将解放，就像Unix与GNU一般，为自由奋斗！</p>
+
+<h2>有问题反馈</h2>
+
+<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+
+<ul>
+<li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[evasi0n]]></title>
-    <link href="http://fengsanity.com/blog/2013/02/04/evad3rs/"/>
+    <link href="http://fengsanity.com/blog/2013/02/04/evasi0n/"/>
     <updated>2013-02-04T10:50:00+08:00</updated>
-    <id>http://fengsanity.com/blog/2013/02/04/evad3rs</id>
+    <id>http://fengsanity.com/blog/2013/02/04/evasi0n</id>
     <content type="html"><![CDATA[<p>早上八点多，evad3rs的大神们已将越狱进度条从85%推进至92%，完全式指日可待。
 <img src="/images/article/evad3rs.jpg" alt="evad3rs" /></p>
 
 <h3>越来与卡的evasi0n主页</h3>
 
-<p>越狱官网<a href="http://http://evasi0n.com/">evasi0n</a>的访问速度越来越慢，可见用户的刷新操作有多频繁。大神们也不容易，又要破解系统，又得出越狱工具，还能做网站。我们就来看看这个越狱主页是啥样子吧！<!--more--></p>
+<p>越狱官网<a href="http://evasi0n.com/">evasi0n</a>的访问速度越来越慢，可见用户的刷新操作有多频繁。大神们也不容易，又要破解系统，又得出越狱工具，还能做网站。我们就来看看这个越狱主页是啥样子吧！<!--more--></p>
 
 <h2>简洁的evasi0n页面</h2>
 
