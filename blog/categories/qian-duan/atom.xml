@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 前端 | Doctor Insane]]></title>
   <link href="http://fengsanity.com/blog/categories/qian-duan/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-09-06T20:25:21+08:00</updated>
+  <updated>2013-09-06T20:26:25+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -26,7 +26,7 @@
 <br />
 
 
-<p><input id = "flyTrigger" type = "button" value = "start" style=" width:80px; height: 35px; border-width: 0; background-color: #ebebeb; border-radius: 5px; color: #666; font-size: 1.3em;" /></p>
+<p><input id = "flyTrigger" type = "button" value = "start" style=" width:80px; height: 32px; border-width: 0; background-color: #ebebeb; border-radius: 5px; color: #666; font-size: 1.3em;" /></p>
 
 <div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 150px; top: 212px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
 
