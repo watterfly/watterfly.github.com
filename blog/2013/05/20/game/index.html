@@ -155,14 +155,14 @@
 		var topNum = Number(topStr.substr(0, topStr.length - 2));
 		var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
 
-        var windosWidth = document.body.clientWidth;
-        var windosHeight = window.innerHeight;
+        var windowWidth = document.body.clientWidth;
+        var windowHeight = window.innerHeight;
 
 
 		if (topNum <= 0 && randomAngle < 180) {
 			randomAngle += 2 * (180 - randomAngle);
         }
-        if (topNum >= (windosHeight - 64) && randomAngle > 180) {
+        if (topNum >= (windowHeight - 64) && randomAngle > 180) {
             randomAngle -= 2 * (randomAngle - 180);
         }
         if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
@@ -172,7 +172,7 @@
                 randomAngle += 2 * (270 - randomAngle);
             }
         }
-        if (leftNum >= (windosWidth - 64) && (randomAngle < 90 || randomAngle > 270)) {
+        if (leftNum >= (windowWidth - 64) && (randomAngle < 90 || randomAngle > 270)) {
             if (randomAngle <= 90) {
                 randomAngle = 180 - randomAngle;
             } else {
