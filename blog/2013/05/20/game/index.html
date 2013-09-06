@@ -107,7 +107,7 @@
 
 <br />
 <input id = "flyTrigger" type = "button" value = "start" style=" width:80px; height: 32px; border-width: 0; background-color: #ebebeb; border-radius: 5px; color: #666; font-size: 1.3em;" /> 
-<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 150px; top: 212px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
+<div id = "flyBlock" style = "position: absolute; z-index:999; width: 64px; height: 64px; left: 150px; top: 212px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
 <br /><br /><br />
 <p> Windows下定时器是基于消息的，而javascript中定时器的运行原理却很少提到，经过分析是将任务定时插入执行队列的原理，毕竟javascript是单线程机制。 </p>
 <p> 小球可以朝随机方向移动，碰到无形的墙壁后会反弹。可以利用它做个“是男人就坚持XX秒”的游戏，不过得好好设计下反弹算法和实时测距算法。噢，它由原生js实现，没考虑太多请况，请用chrome等浏览器吧。 </p>
@@ -159,10 +159,10 @@
         var windowHeight = window.innerHeight;
 
 
-		if (topNum <= 0 && randomAngle < 180) {
+		if (topNum <= document.body.scrollTop && randomAngle < 180) {
 			randomAngle += 2 * (180 - randomAngle);
         }
-        if (topNum >= (windowHeight - 64) && randomAngle > 180) {
+        if (topNum >= (document.body.scrollTop + windowHeight - 85) && randomAngle > 180) {
             randomAngle -= 2 * (randomAngle - 180);
         }
         if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
