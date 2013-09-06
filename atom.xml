@@ -4,7 +4,7 @@
   <title><![CDATA[Doctor Insane]]></title>
   <link href="http://fengsanity.com/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-09-06T17:33:41+08:00</updated>
+  <updated>2013-09-06T19:51:04+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -70,7 +70,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[javascript定时器的探究]]></title>
+    <title type="html"><![CDATA[javascript定时器探究]]></title>
     <link href="http://fengsanity.com/blog/2013/05/20/game/"/>
     <updated>2013-05-20T23:34:00+08:00</updated>
     <id>http://fengsanity.com/blog/2013/05/20/game</id>
@@ -78,10 +78,19 @@
 
 
 <input id = "flyTrigger" type = "button" value = "start" style=" width:70px; height: 30px; border-width: 0; background-color: #ebebeb; border-radius: 5px; color: #666; font-size: 1.3em;" /> 
-<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 400px; top: 345px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
-
+<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 150px; top: 178px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
+<br /><br />
 <p> Windows下定时器是基于消息的，而javascript中定时器的运行原理却很少提到，经过分析是将任务定时插入执行队列的原理，毕竟javascript是单线程机制。 </p>
 <p> 小球可以朝随机方向移动，碰到无形的墙壁后会反弹。可以利用它做个“是男人就坚持XX秒”的游戏，不过得好好设计下反弹算法和实时测距算法。噢，它由原生js实现，没考虑太多请况，请用chrome等浏览器吧。 </p>
+
+<h2>有问题反馈</h2>
+
+<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+
+<ul>
+    <li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
+</ul>
+
 
 
 <script type="text/javascript">
@@ -92,7 +101,7 @@
     function catchEvent(eventObj, event, eventHandler) 
     {
     	if (eventObj.addEventListener) {
-        	eventObj.addEventListener(event, eventHandler, true);
+        	eventObj.addEventListener(event, eventHandler, false);
     	} else if (eventObj.attachEvent) {
         	eventObj.attachEvent("on" + event, eventHandler);
     	}
@@ -116,10 +125,14 @@
 		var topNum = Number(topStr.substr(0, topStr.length - 2));
 		var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
 
+        var windosWidth = document.body.clientWidth;
+        var windosHeight = window.innerHeight;
+
+
 		if (topNum <= 0 && randomAngle < 180) {
 			randomAngle += 2 * (180 - randomAngle);
         }
-        if (topNum >= 450 && randomAngle > 180) {
+        if (topNum >= (windosHeight - 64) && randomAngle > 180) {
             randomAngle -= 2 * (randomAngle - 180);
         }
         if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
@@ -129,7 +142,7 @@
                 randomAngle += 2 * (270 - randomAngle);
             }
         }
-        if (leftNum >= 690 && (randomAngle < 90 || randomAngle > 270)) {
+        if (leftNum >= (windosWidth - 64) && (randomAngle < 90 || randomAngle > 270)) {
             if (randomAngle <= 90) {
                 randomAngle = 180 - randomAngle;
             } else {

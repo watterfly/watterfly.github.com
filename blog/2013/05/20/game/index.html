@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>javascript定时器的探究 - Doctor Insane</title>
+  <title>javascript定时器探究 - Doctor Insane</title>
   <meta name="author" content="Feng Sanity">
 
   
@@ -78,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">Javascript定时器的探究</h1>
+      <h1 class="entry-title">Javascript定时器探究</h1>
     
     
       <p class="meta">
@@ -107,10 +107,19 @@
 
 
 <input id = "flyTrigger" type = "button" value = "start" style=" width:70px; height: 30px; border-width: 0; background-color: #ebebeb; border-radius: 5px; color: #666; font-size: 1.3em;" /> 
-<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 400px; top: 345px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
-
+<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 150px; top: 178px; border-radius: 32px; background-image: url(/images/article/earth.jpg); full-article " > </div>
+<br /><br />
 <p> Windows下定时器是基于消息的，而javascript中定时器的运行原理却很少提到，经过分析是将任务定时插入执行队列的原理，毕竟javascript是单线程机制。 </p>
 <p> 小球可以朝随机方向移动，碰到无形的墙壁后会反弹。可以利用它做个“是男人就坚持XX秒”的游戏，不过得好好设计下反弹算法和实时测距算法。噢，它由原生js实现，没考虑太多请况，请用chrome等浏览器吧。 </p>
+
+<h2>有问题反馈</h2>
+
+<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+
+<ul>
+    <li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
+</ul>
+
 
 
 <script type="text/javascript">
@@ -121,7 +130,7 @@
     function catchEvent(eventObj, event, eventHandler) 
     {
     	if (eventObj.addEventListener) {
-        	eventObj.addEventListener(event, eventHandler, true);
+        	eventObj.addEventListener(event, eventHandler, false);
     	} else if (eventObj.attachEvent) {
         	eventObj.attachEvent("on" + event, eventHandler);
     	}
@@ -145,10 +154,14 @@
 		var topNum = Number(topStr.substr(0, topStr.length - 2));
 		var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
 
+        var windosWidth = document.body.clientWidth;
+        var windosHeight = window.innerHeight;
+
+
 		if (topNum <= 0 && randomAngle < 180) {
 			randomAngle += 2 * (180 - randomAngle);
         }
-        if (topNum >= 450 && randomAngle > 180) {
+        if (topNum >= (windosHeight - 64) && randomAngle > 180) {
             randomAngle -= 2 * (randomAngle - 180);
         }
         if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
@@ -158,7 +171,7 @@
                 randomAngle += 2 * (270 - randomAngle);
             }
         }
-        if (leftNum >= 690 && (randomAngle < 90 || randomAngle > 270)) {
+        if (leftNum >= (windosWidth - 64) && (randomAngle < 90 || randomAngle > 270)) {
             if (randomAngle <= 90) {
                 randomAngle = 180 - randomAngle;
             } else {
@@ -342,7 +355,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2013/05/20/game/">javascript定时器的探究</a>
+        <a href="/blog/2013/05/20/game/">javascript定时器探究</a>
       </li>
     
       <li class="post">
