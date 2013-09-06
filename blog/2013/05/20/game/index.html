@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>evasi0n - Doctor Insane</title>
+  <title>javascript定时器的探究 - Doctor Insane</title>
   <meta name="author" content="Feng Sanity">
 
   
-  <meta name="description" content="About evad3rs">
-  <meta name="keywords" content="jailbreak evad3rs 越狱">
+  <meta name="description" content="a page game">
+  <meta name="keywords" content="javascript html css前端">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://fengsanity.com/blog/2013/02/04/evasi0n/">
+  <link rel="canonical" href="http://fengsanity.com/blog/2013/05/20/game/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -78,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">Evasi0n</h1>
+      <h1 class="entry-title">Javascript定时器的探究</h1>
     
     
       <p class="meta">
@@ -94,7 +94,7 @@
   
 
 
-<time datetime="2013-02-04T10:50:00+08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+<time datetime="2013-05-20T23:34:00+08:00" pubdate data-updated="true">May 20<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -103,38 +103,149 @@
   </header>
 
 
-<div class="entry-content"><p>早上八点多，evad3rs的大神们已将越狱进度条从85%推进至92%，完全式指日可待。
-<img src="/images/article/evad3rs.jpg" alt="evad3rs" /></p>
+<div class="entry-content"><p> 想起js中也有个定时器，试着做了个好玩的小把戏，缓解一下心情，点击按钮就可以看到了 <!--more--></p>
 
-<h3>越来与卡的evasi0n主页</h3>
 
-<p>越狱官网<a href="http://evasi0n.com/">evasi0n</a>的访问速度越来越慢，可见用户的刷新操作有多频繁。大神们也不容易，又要破解系统，又得出越狱工具，还能做网站。我们就来看看这个越狱主页是啥样子吧！<!--more--></p>
+<input id = "flyTrigger" type = "button" value = "start" style=" width:70px; height: 30px; border-width: 0; background-color: gray; border-radius: 5px; color: white; font-size: 1.3em;" /> 
+<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 400px; top: 345px; border-radius: 32px; background-image: url(/images/article/earth.jpg) " > </div>
 
-<h2>简洁的evasi0n页面</h2>
+<p> Windows下定时器是基于消息的，而javascript中定时器的运行原理却很少提到，经过分析是将任务定时插入执行队列的原理，毕竟javascript是单线程机制。 </p>
+<p> 小球可以朝随机方向移动，碰到无形的墙壁后会反弹。可以利用它做个“是男人就坚持XX秒”的游戏，不过得好好设计下反弹算法和实时测距算法。噢，对了，请在chrome等浏览器下使用吧。 </p>
 
-<p><img src="/images/article/family%20photo.jpg" alt="evasi0n" /></p>
 
-<p>我们发现所谓的越狱官网就只有一个页面，无法跳转。背景主色调为灰白色，配以少许清淡黑客帝国般的点缀，总体虽然偏冷，但看上去非常柔和舒服。页面十分简洁明了，高度固定，打开后所有内容便一览无余。黑客们称此次越狱是“evasi0n-iOS 6.x Jailbreak”，作为主标题印在中央上方。正中央则是本次越狱支持的苹果设备全家福照，一眼便知晓大神能否拯救你的设备。下方则是进度条以及本次进度的说明，目前指向92%的位置，描述为“Final testing and preparation. Coming back soon!”，说明大神正在进行最后阶段的测试。底部则是Linux、Mac OS X、Windows三大操作系统越狱工具的下载按钮，可惜现在均为灰色不可选。</p>
+<script type="text/javascript">
+//<![CDATA[
 
-<h2>页面分析</h2>
+    var randomAngle;
 
-<p>没有采用HTML5技术。使用传统的div进行嵌套，并未出现table标签。简洁的我实在无话可说，说明大神花在越狱工作的精力非常多，其他杂活便无暇顾及。</p>
+    function catchEvent(eventObj, event, eventHandler) 
+    {
+    	if (eventObj.addEventListener) {
+        	eventObj.addEventListener(event, eventHandler, true);
+    	} else if (eventObj.attachEvent) {
+        	eventObj.attachEvent("on" + event, eventHandler);
+    	}
+    }
 
-<h2>总结</h2>
+    function getStyle(obj, jsprop, cssprop)
+    {
+        if (obj.currentStyle) {
+            return obj.jsprop;
+        } else if (window.getComputedStyle) {
+            return document.defaultView.getComputedStyle(obj, null).getPropertyValue(cssprop);
+        }
+    }
 
-<p>很简明的页面，基本目的已经达到，小白容易上手，大神也乐意。我只想说我现在的心情是这样的</p>
+	function linearFly()
+	{
+		var flyTag = document.getElementById("flyBlock");
 
-<p><img src="/images/article/free.jpg" alt="I wanna be free" /></p>
+		var topStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("top"));
+ 		var leftStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("left"));
+		var topNum = Number(topStr.substr(0, topStr.length - 2));
+		var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
 
-<h2>有问题反馈</h2>
+		if (topNum <= 0 && randomAngle < 180) {
+			randomAngle += 2 * (180 - randomAngle);
+        }
+        if (topNum >= 450 && randomAngle > 180) {
+            randomAngle -= 2 * (randomAngle - 180);
+        }
+        if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
+           if (randomAngle < 180) {
+                randomAngle = 180 - randomAngle;
+            } else {
+                randomAngle += 2 * (270 - randomAngle);
+            }
+        }
+        if (leftNum >= 900 && (randomAngle < 90 || randomAngle > 270)) {
+            if (randomAngle <= 90) {
+                randomAngle = 180 - randomAngle;
+            } else {
+                randomAngle -= 2 * (randomAngle - 270);
+            }
+        }
 
-<p>访问中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流。</p>
+        if (90 == randomAngle) {
+            randomAngle = 89;
+        }
+        if (270 == randomAngle) {
+            randomAngle = 269;
+        }
+        var randomTan = Math.tan(randomAngle * 0.017453293);
 
-<ul>
-<li>邮件(mrfenglingyu#gmail.com, 把#换成@)</li>
-</ul>
+        var xAxis, yAxis;
+        if (Math.abs(randomTan) > 1) {
+            if (randomAngle < 90) {
+                xAxis = 1;
+                yAxis = parseInt(Math.abs(randomTan));
+            } else if (randomAngle < 180) {
+                xAxis = -1;
+                yAxis = parseInt(Math.abs(randomTan));
+            } else if (randomAngle < 270) {
+                xAxis = -1;
+                yAxis = -1 * parseInt(Math.abs(randomTan));
+            } else {
+                xAxis = 1;
+                yAxis = -1 * parseInt(Math.abs(randomTan));
+            }
+        } else {
+            if (randomAngle < 90) {
+                xAxis = parseInt(1 / Math.abs(randomTan));
+                yAxis = 1;
+            } else if (randomAngle < 180) {
+                xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                yAxis = 1;
+            } else if (randomAngle < 270) {
+                xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                yAxis = -1;
+            } else {
+                xAxis = parseInt(1 / Math.abs(randomTan));
+                yAxis = -1;
+            }
+        }
 
-</div>
+        if (xAxis > 10) {
+        	xAxis = 10;
+        } 
+        if (xAxis < -10) {
+        	xAxis = -10;
+        }
+
+        if (yAxis > 10) {
+        	yAxis = 10;
+        } 
+        if (yAxis < -10) {
+        	yAxis = -10;
+        }
+
+        flyTag.style.left = leftNum + xAxis + "px";
+        flyTag.style.top = topNum - yAxis + "px";
+    }
+
+    function init() 
+    {
+        ;
+    }
+
+    catchEvent(window, "load", init);
+
+    var tmOut;
+    var startTag = document.getElementById("flyTrigger");
+    catchEvent(startTag, "click", function(){
+        if ("start" == startTag.value) {
+            startTag.value = "stop";
+
+            randomAngle = parseInt(Math.random() * 360);
+            tmOut = setInterval(linearFly, 5);
+        } else if ("stop" == startTag.value) {
+            startTag.value = "start";
+            clearInterval(tmOut);
+        }
+    });
+
+//]]>
+</script></div>
 
 
   <footer>
@@ -156,12 +267,12 @@
   
 
 
-<time datetime="2013-02-04T10:50:00+08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+<time datetime="2013-05-20T23:34:00+08:00" pubdate data-updated="true">May 20<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/jailbreak/'>jailbreak</a>
+    <a class='category' href='/blog/categories/qian-duan/'>前端</a>
   
 </span>
 
@@ -170,7 +281,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fengsanity.com/blog/2013/02/04/evasi0n/" data-via="" data-counturl="http://fengsanity.com/blog/2013/02/04/evasi0n/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fengsanity.com/blog/2013/05/20/game/" data-via="" data-counturl="http://fengsanity.com/blog/2013/05/20/game/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -181,10 +292,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/02/03/tinyumbrella/" title="Previous Post: 小雨伞">&laquo; 小雨伞</a>
+        <a class="basic-alignment left" href="/blog/2013/02/05/100-percent/" title="Previous Post: 100%">&laquo; 100%</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/02/05/100-percent/" title="Next Post: 100%">100% &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/06/06/alibaba/" title="Next Post: 关于阿里巴巴前端">关于阿里巴巴前端 &raquo;</a>
       
     </p>
   </footer>
@@ -265,8 +376,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://fengsanity.com/blog/2013/02/04/evasi0n/';
-        var disqus_url = 'http://fengsanity.com/blog/2013/02/04/evasi0n/';
+        var disqus_identifier = 'http://fengsanity.com/blog/2013/05/20/game/';
+        var disqus_url = 'http://fengsanity.com/blog/2013/05/20/game/';
         var disqus_script = 'embed.js';
       
     (function () {

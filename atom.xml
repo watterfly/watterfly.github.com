@@ -4,7 +4,7 @@
   <title><![CDATA[Doctor Insane]]></title>
   <link href="http://fengsanity.com/atom.xml" rel="self"/>
   <link href="http://fengsanity.com/"/>
-  <updated>2013-09-04T02:03:52+08:00</updated>
+  <updated>2013-09-06T14:14:27+08:00</updated>
   <id>http://fengsanity.com/</id>
   <author>
     <name><![CDATA[Feng Sanity]]></name>
@@ -67,6 +67,156 @@
 </ul>
 
 ]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[javascript定时器的探究]]></title>
+    <link href="http://fengsanity.com/blog/2013/05/20/game/"/>
+    <updated>2013-05-20T23:34:00+08:00</updated>
+    <id>http://fengsanity.com/blog/2013/05/20/game</id>
+    <content type="html"><![CDATA[<p> 想起js中也有个定时器，试着做了个好玩的小把戏，缓解一下心情，点击按钮就可以看到了 <!--more--></p>
+
+
+<input id = "flyTrigger" type = "button" value = "start" style=" width:70px; height: 30px; border-width: 0; background-color: gray; border-radius: 5px; color: white; font-size: 1.3em;" /> 
+<div id = "flyBlock" style = "position: absolute;  width: 64px; height: 64px; left: 400px; top: 345px; border-radius: 32px; background-image: url(/images/article/earth.jpg) " > </div>
+
+<p> Windows下定时器是基于消息的，而javascript中定时器的运行原理却很少提到，经过分析是将任务定时插入执行队列的原理，毕竟javascript是单线程机制。 </p>
+<p> 小球可以朝随机方向移动，碰到无形的墙壁后会反弹。可以利用它做个“是男人就坚持XX秒”的游戏，不过得好好设计下反弹算法和实时测距算法。噢，对了，请在chrome等浏览器下使用吧。 </p>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+
+    var randomAngle;
+
+    function catchEvent(eventObj, event, eventHandler) 
+    {
+    	if (eventObj.addEventListener) {
+        	eventObj.addEventListener(event, eventHandler, true);
+    	} else if (eventObj.attachEvent) {
+        	eventObj.attachEvent("on" + event, eventHandler);
+    	}
+    }
+
+    function getStyle(obj, jsprop, cssprop)
+    {
+        if (obj.currentStyle) {
+            return obj.jsprop;
+        } else if (window.getComputedStyle) {
+            return document.defaultView.getComputedStyle(obj, null).getPropertyValue(cssprop);
+        }
+    }
+
+	function linearFly()
+	{
+		var flyTag = document.getElementById("flyBlock");
+
+		var topStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("top"));
+ 		var leftStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("left"));
+		var topNum = Number(topStr.substr(0, topStr.length - 2));
+		var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
+
+		if (topNum <= 0 && randomAngle < 180) {
+			randomAngle += 2 * (180 - randomAngle);
+        }
+        if (topNum >= 450 && randomAngle > 180) {
+            randomAngle -= 2 * (randomAngle - 180);
+        }
+        if (leftNum <= 0 && randomAngle > 90 && randomAngle < 270) {
+           if (randomAngle < 180) {
+                randomAngle = 180 - randomAngle;
+            } else {
+                randomAngle += 2 * (270 - randomAngle);
+            }
+        }
+        if (leftNum >= 900 && (randomAngle < 90 || randomAngle > 270)) {
+            if (randomAngle <= 90) {
+                randomAngle = 180 - randomAngle;
+            } else {
+                randomAngle -= 2 * (randomAngle - 270);
+            }
+        }
+
+        if (90 == randomAngle) {
+            randomAngle = 89;
+        }
+        if (270 == randomAngle) {
+            randomAngle = 269;
+        }
+        var randomTan = Math.tan(randomAngle * 0.017453293);
+
+        var xAxis, yAxis;
+        if (Math.abs(randomTan) > 1) {
+            if (randomAngle < 90) {
+                xAxis = 1;
+                yAxis = parseInt(Math.abs(randomTan));
+            } else if (randomAngle < 180) {
+                xAxis = -1;
+                yAxis = parseInt(Math.abs(randomTan));
+            } else if (randomAngle < 270) {
+                xAxis = -1;
+                yAxis = -1 * parseInt(Math.abs(randomTan));
+            } else {
+                xAxis = 1;
+                yAxis = -1 * parseInt(Math.abs(randomTan));
+            }
+        } else {
+            if (randomAngle < 90) {
+                xAxis = parseInt(1 / Math.abs(randomTan));
+                yAxis = 1;
+            } else if (randomAngle < 180) {
+                xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                yAxis = 1;
+            } else if (randomAngle < 270) {
+                xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                yAxis = -1;
+            } else {
+                xAxis = parseInt(1 / Math.abs(randomTan));
+                yAxis = -1;
+            }
+        }
+
+        if (xAxis > 10) {
+        	xAxis = 10;
+        } 
+        if (xAxis < -10) {
+        	xAxis = -10;
+        }
+
+        if (yAxis > 10) {
+        	yAxis = 10;
+        } 
+        if (yAxis < -10) {
+        	yAxis = -10;
+        }
+
+        flyTag.style.left = leftNum + xAxis + "px";
+        flyTag.style.top = topNum - yAxis + "px";
+    }
+
+    function init() 
+    {
+        ;
+    }
+
+    catchEvent(window, "load", init);
+
+    var tmOut;
+    var startTag = document.getElementById("flyTrigger");
+    catchEvent(startTag, "click", function(){
+        if ("start" == startTag.value) {
+            startTag.value = "stop";
+
+            randomAngle = parseInt(Math.random() * 360);
+            tmOut = setInterval(linearFly, 5);
+        } else if ("stop" == startTag.value) {
+            startTag.value = "start";
+            clearInterval(tmOut);
+        }
+    });
+
+//]]&gt;
+</script>]]></content>
   </entry>
   
   <entry>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+        <style type="text/css">
+            [class="a b"] { color: blue; }
+            #flyBlock { 
+                position: absolute; 
+                width: 64px; 
+                height: 64px; 
+                background-color: yellow; 
+                background-image: url(/images/article/basketball.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input id="flyTrigger" type="button" value="start" />
+        </div>
+        <div id="flyBlock"></div>
+        <script type="text/javascript">
+        //<![CDATA[
+
+            var randomAngle;
+
+            function catchEvent(eventObj, event, eventHandler) 
+            {
+                if (eventObj.addEventListener) {
+                    eventObj.addEventListener(event, eventHandler, true);
+                } else if (eventObj.attachEvent) {
+                    eventObj.attachEvent("on" + event, eventHandler);
+                }
+            }
+
+            function getStyle(obj, jsprop, cssprop)
+            {
+                if (obj.currentStyle) {
+                    return obj.jsprop;
+                } else if (window.getComputedStyle) {
+                    return document.defaultView.getComputedStyle(obj, null).getPropertyValue(cssprop);
+                }
+            }
+
+            function linearFly()
+            {
+                var flyTag = document.getElementById("flyBlock");
+
+                var topStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("top"));
+                var leftStr = new String(document.defaultView.getComputedStyle(flyTag, null).getPropertyValue("left"));
+                var topNum = Number(topStr.substr(0, topStr.length - 2));
+                var leftNum = Number(leftStr.substr(0, leftStr.length - 2));
+
+                if (topNum <= 50 && randomAngle < 180) {
+                    randomAngle += 2 * (180 - randomAngle);
+                }
+                if (topNum >= 450 && randomAngle > 180) {
+                    randomAngle -= 2 * (randomAngle - 180);
+                }
+                if (leftNum <= 50 && randomAngle > 90 && randomAngle < 270) {
+                    if (randomAngle < 180) {
+                        randomAngle = 180 - randomAngle;
+                    } else {
+                        randomAngle += 2 * (270 - randomAngle);
+                    }
+                }
+                if (leftNum >= 400 && (randomAngle < 90 || randomAngle > 270)) {
+                    if (randomAngle <= 90) {
+                        randomAngle = 180 - randomAngle;
+                    } else {
+                        randomAngle -= 2 * (randomAngle - 270);
+                    }
+                }
+
+
+                if (90 == randomAngle) {
+                    randomAngle = 89;
+                }
+                if (270 == randomAngle) {
+                    randomAngle = 269;
+                }
+                var randomTan = Math.tan(randomAngle * 0.017453293);
+
+                var xAxis, yAxis;
+                if (Math.abs(randomTan) > 1) {
+                    if (randomAngle < 90) {
+                        xAxis = 1;
+                        yAxis = parseInt(Math.abs(randomTan));
+                    } else if (randomAngle < 180) {
+                        xAxis = -1;
+                        yAxis = parseInt(Math.abs(randomTan));
+                    } else if (randomAngle < 270) {
+                        xAxis = -1;
+                        yAxis = -1 * parseInt(Math.abs(randomTan));
+                    } else {
+                        xAxis = 1;
+                        yAxis = -1 * parseInt(Math.abs(randomTan));
+                    }
+                } else {
+                    if (randomAngle < 90) {
+                        xAxis = parseInt(1 / Math.abs(randomTan));
+                        yAxis = 1;
+                    } else if (randomAngle < 180) {
+                        xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                        yAxis = 1;
+                    } else if (randomAngle < 270) {
+                        xAxis = -1 * parseInt(1 / Math.abs(randomTan));
+                        yAxis = -1;
+                    } else {
+                        xAxis = parseInt(1 / Math.abs(randomTan));
+                        yAxis = -1;
+                    }
+                }
+
+
+                xAxis = Math.abs(xAxis) > 10 ? 10 : xAxis;
+                yAxis = Math.abs(yAxis) > 10 ? 10 : yAxis;
+
+                flyTag.style.left = leftNum + xAxis + "px";
+                flyTag.style.top = topNum - yAxis + "px";
+            }
+
+            function init() 
+            {
+                var flyTag = document.getElementById("flyBlock");
+                flyTag.style.left = "250px";
+                flyTag.style.top = "150px";
+
+                var tmOut;
+                var startTag = document.getElementById("flyTrigger");
+                catchEvent(startTag, "click", function(){
+                    if ("start" == startTag.value) {
+                        startTag.value = "stop";
+
+                        randomAngle = parseInt(Math.random() * 360);
+
+                        tmOut = setInterval(linearFly, 5);
+                    } else if ("stop" == startTag.value) {
+                        startTag.value = "start";
+                        clearInterval(tmOut);
+                    }
+                });
+            }
+
+            catchEvent(window, "load", init);
+
+        //]]>
+        </script>
+    </body>
+</html>
